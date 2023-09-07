@@ -9,10 +9,12 @@
             font-family: Arial, Helvetica, sans-serif;
         }
         .container {
+            background-color: white;
             max-width: 400px;
-            margin: 0 auto;
+            
+            margin: auto;
             padding: 20px;
-            border: 1px solid #ccc;
+            border: 1px solid ;
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
@@ -24,7 +26,7 @@
         }
         input[type="text"],
         input[type="password"] {
-            width: 100%;
+            width: 90%;
             padding: 10px;
             margin-top: 5px;
             margin-bottom: 15px;
@@ -33,7 +35,9 @@
         }
         .btn {
             display: block;
-            width: 100%;
+            margin-left: 85px;
+            align: center;
+            width: 50%;
             padding: 10px;
             background-color: #1877f2;
             color: #fff;
@@ -43,11 +47,14 @@
         }
         .btn:hover {
             background-color: #ffffff;
+            color: black;
+            font-weight: bolder;
         }
     </style>
     <style>
         body {
-            background-color: #ffffff;
+            background-color: #1877f2;
+            margin-top: 100px;
         }
     </style>
 </head>
@@ -65,10 +72,10 @@
                 <input type="password" id="password" name="password" required>
             </div>
             <div class="form-group">
-                <input type="remember" id="btn" name="tick" required>
+                <input type="checkbox" id="btn" name="tick" required>
                 <label for="remember">Remember Me</label> 
             </div>
-            <button type="submit" class="btn">Login</button>
+            <button justify = center type="submit" class="btn">Login</button>
              <h4 align = center>New to MyApp? Sign Up</h4>
              
         </form>
